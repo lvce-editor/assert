@@ -1,3 +1,5 @@
-export class VError {
-  constructor(error: any, message?: string): Error
-}
+export const array: (value: any) => void
+export const boolean: (value: any) => void
+export const number: (value: any) => void
+export const object: (value: any) => void
+export const string: (value: any) => void
