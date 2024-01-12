@@ -1,7 +1,13 @@
 import * as Assert from '../src/parts/Assert/Assert.js'
 
+test('boolean', () => {
+  const value = true
+  Assert.boolean(value)
+})
+
 test('boolean - error', () => {
-  expect(() => Assert.boolean(undefined)).toThrow(
+  const value = undefined
+  expect(() => Assert.boolean(value)).toThrow(
     new Error(`expected value to be of type boolean`),
   )
 })
