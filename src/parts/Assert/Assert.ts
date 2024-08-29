@@ -1,5 +1,5 @@
-import { AssertionError } from '../AssertionError/AssertionError.js'
-import * as GetType from '../GetType/GetType.js'
+import { AssertionError } from '../AssertionError/AssertionError.ts'
+import * as GetType from '../GetType/GetType.ts'
 
 export const object = (value: unknown) => {
   const type = GetType.getType(value)
