@@ -33,7 +33,7 @@
   },
   "jest": {
     "testMatch": [
-      "<rootDir>/test/*.test.js"
+      "<rootDir>/test/*.test.ts"
     ],
     "modulePathIgnorePatterns": [
       "<rootDir>/dist/"
