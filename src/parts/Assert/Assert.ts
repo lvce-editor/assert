@@ -1,7 +1,7 @@
 import { AssertionError } from '../AssertionError/AssertionError.js'
 import * as GetType from '../GetType/GetType.js'
 
-export const object = (value) => {
+export const object = (value: unknown) => {
   const type = GetType.getType(value)
   if (type !== 'object') {
     throw new AssertionError('expected value to be of type object')
