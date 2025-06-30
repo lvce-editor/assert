@@ -1,22 +1,24 @@
-export const getType = (value: unknown): string => {
+import * as ValueType from '../ValueType/ValueType.ts'
+
+export const getType = (value: unknown): number => {
   switch (typeof value) {
     case 'number':
-      return 'number'
+      return ValueType.Number
     case 'function':
-      return 'function'
+      return ValueType.Function
     case 'string':
-      return 'string'
+      return ValueType.String
     case 'object':
       if (value === null) {
-        return 'null'
+        return ValueType.Null
       }
       if (Array.isArray(value)) {
-        return 'array'
+        return ValueType.Array
       }
-      return 'object'
+      return ValueType.Object
     case 'boolean':
-      return 'boolean'
+      return ValueType.Boolean
     default:
-      return 'unknown'
+      return ValueType.Unknown
   }
 }
