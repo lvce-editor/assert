@@ -17,7 +17,3 @@ const someFunction = (value) => {
   Assert.array(value)
 }
 ```
-
-
-
-
