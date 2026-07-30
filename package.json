@@ -14,7 +14,8 @@
     "test:watch": "node --unhandled-rejections=warn --experimental-vm-modules ./node_modules/jest/bin/jest.js --watch",
     "build": "node scripts/build.js",
     "type-check": "tsc",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "lint": "prettier --check . && knip --no-config-hints"
   },
   "keywords": [
     "assert"
@@ -23,10 +24,11 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/preset-typescript": "^7.29.7",
+    "@jest/globals": "^30.4.1",
     "@rollup/plugin-babel": "^7.1.0",
-    "@rollup/plugin-node-resolve": "^16.0.3",
     "execa": "^9.6.1",
     "jest": "^30.4.2",
+    "knip": "^6.29.0",
     "prettier": "^3.8.3",
     "rollup": "^4.60.4",
     "ts-jest": "^29.4.11",
